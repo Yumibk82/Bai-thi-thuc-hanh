@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Bai so 1</title>
+</head>
+<body>
+<script>
+    let arr=[];
+    let findMax = function (arr){
+        let max=arr[0];
+        for (let i = 0; i < arr.length; i++) {
+            if(arr[i]>max){
+                max=arr[i];
+            }
+        }
+        return max;
+    }
+    let a=[7,8,9,10];
+    findMax(a);
+    console.log(findMax(a))
+</script>
+</body>
+</html>

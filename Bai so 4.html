@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Bai so 4</title>
+</head>
+<canvas id="myCanvas" width="500" height="500"></canvas>
+<body>
+<script>
+    let Circle = function (x,y,radius, color){
+        this.x      = x;
+        this.y      = y;
+        this.radius = radius;
+        this.color  = color;
+
+        this.render = function (){
+            const canvas=document.getElementById("myCanvas");
+            const pen = canvas.getContext('2d');
+            pen.fillStyle=color;
+            pen.arc(x,y,radius,0,Math.PI*2);
+            pen.fill();
+        }
+    }
+
+    let c1 = new Circle(10it,10,100,"#000000");
+        c1.render();
+
+</script>
+</body>
+</html>

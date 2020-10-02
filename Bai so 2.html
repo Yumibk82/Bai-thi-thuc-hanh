@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Bai so 2</title>
+</head>
+<body>
+<script>
+    let arr=[];
+    let tryRemoveFromArray = function (x,arr){
+        for (let i = 0; i < arr.length; i++) {
+            if(x===arr[i]){
+                arr.splice(i,1);
+                return arr;
+            }}
+        return arr;
+    }
+    tryRemoveFromArray(2,[0,2,3,5,7,9]);
+    document.write(tryRemoveFromArray(2,[0,2,3,5,7,9]));
+
+</script>
+</body>
+</html>

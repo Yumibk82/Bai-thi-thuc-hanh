@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Bai so 3</title>
+</head>
+<body>
+<script>
+    let number=+prompt("Please input a integer number ");
+    let arr=[];
+    let a=0;
+    let b=1;
+    //let flag= false;
+    let checkFibo = function (n){
+        for (let i = 1; i < n+1; i++) {
+            arr.push(a);
+            arr.push(b);
+            let num = a+b;
+            arr.push(num);
+            a = b;
+            b= num;
+        }
+        if(arr.indexOf(n) !==-1){
+           alert("The input integer number IS Fibonacci number");
+        }else alert("The input integer number IS NOT Fibonacci number");
+    }
+    checkFibo(number);
+</script>
+</body>
+</html>
