@@ -17,8 +17,8 @@
             const canvas=document.getElementById("myCanvas");
             const pen = canvas.getContext('2d');
             pen.beginPath();
-            pen.fillStyle=color;
-            pen.arc(x,y,radius,0,Math.PI*2);
+            pen.fillStyle=this.color;
+            pen.arc(this.x,this.y,this.radius,0,Math.PI*2);
             pen.fill();
         }
     }
